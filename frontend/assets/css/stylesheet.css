@@ -1,0 +1,349 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+
+body {
+	height: 100vh;
+	background-color: #020204;
+}
+
+main {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profileSettings {
+	position: absolute;
+	background-color: white;
+	width: 500px;
+	height: 500px;
+	z-index: 100 !important;
+}
+
+.profileDetails {
+	display: flex;
+	flex-direction: row;
+	margin: 5px 0 0 5px;
+}
+.profileDetails label {
+	padding-top: 0;
+	font-size: medium;
+	margin-right: 5px;
+}
+
+.profEl {
+	display: flex;
+	flex-direction: row;
+}
+
+.btnDiv {
+	display: flex;
+	margin-right: 20px;
+}
+
+.btnDiv button {
+	width: 80px;
+	margin-left: 30px;
+}
+
+.settings {
+	width: 80px;
+	justify-self: left;
+	margin-left: 0;
+}
+
+.btnDiv .btn:hover {
+	background-color: darkgray;
+}
+
+/* Task tab section */
+h2 {
+	text-align: center;
+	background-color: darkgray;
+	padding: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #eee;
+	font-size: 18px;
+	transition: 0.2s;
+	font-family: 'Indie Flower', cursive;
+
+	/* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul li:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+ul li:hover {
+	background: #ddd;
+}
+
+ul li.checked {
+	background: #888;
+	color: #fff;
+	text-decoration: line-through;
+}
+
+ul li.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+	background-color: red;
+}
+
+.header {
+	background-color: darkgray;
+	padding: 40px 40px;
+	color: white;
+	text-align: center;
+}
+
+.header:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.taskInput {
+	margin: 10px 0;
+	border: none;
+	border-radius: 0;
+	width: 75%;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 10px 0 0 10px;
+}
+
+.taskAddBtn {
+	height: 40px;
+	width: 20%;
+	background: #dcdcdc;
+	color: rgb(80, 80, 80);
+	text-align: center;
+	border: none;
+	font-size: 16px;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer;
+	transition: 0.3s;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.taskAddBtn:hover {
+	background-color: #bbb;
+}
+
+/* Login / Register section */
+
+.logtab {
+	margin: 100px auto;
+    padding: 20px 30px;
+    width: 500px;
+    background-color: #ffffff8f;
+    border-radius: 20px;
+    border: 1px solid #6b6b6b;
+    display: flex;
+    flex-direction: column;
+}
+input[type=checkbox]{
+height: 25px;
+margin: 0px;
+}
+
+input {
+	padding: 10px 10px;
+	margin: 10px 0;
+	height: 40px;
+	border: 0 solid rgb(0, 0, 0);
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+label {
+	font-size: large;
+	font-family: 'Ubuntu', sans-serif;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.btn {
+	margin: 10px auto;
+	width: 40%;
+	height: 30px;
+	background: #d9d9d9;
+	color: #555;
+	border: none;
+	border-radius: 0;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 10px;
+}
+
+.logtab .btn:hover {
+	background-color: #555;
+	color: #d9d9d9;
+}
+
+.displayNone {
+	display: none !important;
+}
+
+.todoSection {
+	display: flex;
+	justify-content: center;
+}
+
+.todoApp {
+	width: 500px;
+}
+
+.inputSection {
+	background-color: darkgray;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.checkDiv {
+	display: flex;
+}
+
+.checkEmailDiv,
+.checkPasswordDiv {
+	display: flex;
+	flex-direction: column;
+}
+
+.taskCompleted {
+	background-color: rgb(52, 168, 52) !important;
+}
+
+.completed {
+	position: absolute;
+	right: 39px;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+	background-color: green;
+}
+
+.modalBackground {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(22, 22, 22, 0.792);
+}
+
+.conflict {
+	margin-left: 25px;
+	text-decoration: underline;
+}
+
+.profileSettings {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.changeEmailWrapper {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+
+.changeEmailInput{
+  background: #d9d9d9;
+  width: 250px;
+}
+
+.changeEmailBtn {
+	width: 150px;
+	font-size: 18px;
+	background: #d9d9d9;
+	color: #555;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 10px;
+}
+
+.profileDisplayDetails{
+  margin-bottom: 20px;
+}
+
+.profileSettingsName, .profileSettingsEmail{
+  font-size: 20px;
+}
+
+
+.logtabWrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.noAccount{
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+
+.profEl label{
+	color: white;
+}
+.profileEmail, .profileUserName{
+	color: white;
+}

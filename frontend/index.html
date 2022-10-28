@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="assets/js/fetch.js" defer></script>
+    <title>Project</title>
+</head>
+<body>
+  <header class="profileSection">
+      <div class="profileDetails">
+        <div class="profEl"><label for="uname"><b>Username: </b></label><p class="profileUserName"> Test999</p></div>
+        <div class="profEl"><label for="email"><b>Email: </b></label><p class="profileEmail"> test999@gmail.com</p></div>
+      </div>
+      <div class="btnDiv">
+        <button class="btn settings">Settings</button>
+        <button class="btn logoutBtn" type="submit">Log out</button>
+      </div>
+  </header>
+  <main>
+      <div class="logtab displayNone">
+        <div class="logtabWrapper logtabUsername displayNone">
+          <label class="label labelName" for="uname"><b>Username</b></label>
+          <input id="uName" type="text" placeholder="Enter Username" name="uname" required>
+        </div>
+        <div class="logtabWrapper logtabEmailPassword">
+          <label class="label labelEmail" for="uname"><b>Email</b></label>
+          <input id="Email" type="text" placeholder="Enter Email" name="uemail" required>
+        
+          <label class="label labelPassword" for="psw"><b>Password</b></label>
+          <input id="Psw" type="password" placeholder="Enter Password" name="psw" required>
+          <div class="checkDiv">
+            <div class="checkEmailDiv">
+              <label for="checkEmail">Remember Email</label>
+              <input type="checkbox" name="checkboxEmail" class="checkEmail">
+            </div>
+            <div class="checkPasswordDiv">
+              <label for="checkPassword">Remember Password (if lazy)</label>
+              <input type="checkbox" name="checkPassword" class="checkPassword">
+            </div>
+          </div>
+          <p class="noAccount">Don't have an account? Register here!</p>
+        </div>
+        
+        <button class="btn loginBtn" type="submit">Log in</button>
+        <button class="btn registerBtn displayNone" type="submit">Register</button>
+      </div>
+      <section class="todoSection">
+        <div class="todoApp">
+          <h2>My To Do List</h2>
+          <ul id="myUL" class="tasksWrapper">
+            <li>You should not see this<span class="completed">x</span><span class="close">x</span></li>
+            <li>Neither this</li>
+            <li>Nor this</li>
+          </ul>
+
+          <div id="myDIV" class="inputSection">
+            <input type="text" id="myInput" class="taskInput" placeholder="Title...">
+            <button class="taskAddBtn">Add</button>
+          </div>
+        </div>
+      </section>
+      <div class="modalBackground displayNone"></div>
+      <div class="profileSettings displayNone">
+        <div class="profileDisplayDetails">
+          <p class="profileSettingsName">sae</p>
+          <p class="profileSettingsEmail">ase</p>
+        </div>
+      <div class="changeEmailWrapper">
+        <label class="changeEmailLabel" for="changeEm">Change your email here:</label>
+        <input type="email" name="changeEm" class="changeEmailInput" placeholder="New email...">
+        <button class="changeEmailBtn">Change</button>
+      </div>
+      </div>
+    </main>
+
+    
+</body>
+</html>
