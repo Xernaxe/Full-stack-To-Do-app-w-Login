@@ -1,3 +1,14 @@
+Does not contain .env file
+
+Full-stack To-Do App w/ Login
+
+Express
+JWT
+BCrypt
+JavaScript
+SQL
+Jest
+
 
 
 NB! ONLY THE FIRST 2 ACCOUNTS ARE POPULATED WITH TASKS
