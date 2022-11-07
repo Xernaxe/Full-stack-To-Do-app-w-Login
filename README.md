@@ -2,12 +2,15 @@ Does not contain .env file
 
 Full-stack To-Do App w/ Login
 
+Tech stack:
+NodeJs
 Express
 JWT
 BCrypt
 JavaScript
 SQL
 Jest
+AWS
 
 
 
